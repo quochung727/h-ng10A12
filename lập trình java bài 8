@@ -1,0 +1,55 @@
+package basic.dev;
+
+import java.util.Scanner;
+
+public class MmainApp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        Scanner scanner = new Scanner (System.in);
+        
+      // Nhập vào 2 số nguyên a và b
+        System.out.println("Nhập vào số nguyên a:12");
+        int a = 12;
+        System.out.println("Nhập vào số nguyên b:5");
+        int b = 5;
+        
+      // Tính toán các phép toán: tổng, hiệu, tích, thương
+        int tong = a + b;
+        int hieu = a - b;
+        int tich = a * b;
+        double thuong = (double) a/ b;
+        
+     // In kết quả ra màn hình, định dạng 2 chữ số thập phân cho phép chia
+        System.out.printf("Tổng của a và b: %d\\n", tong);
+        System.out.printf("Hiệu của a và b: %d\n", hieu);
+        System.out.printf("Tích của a và b: %d\n", tich);
+        System.out.printf("Thương của a và b: %.2f\n", thuong);
+        
+     // Khai báo biến c để lưu trữ kết quả phép so sánh
+        boolean c;
+        
+     // Thực hiện các phép so sánh và in kết quả
+        c = a > b;
+        System.out.printf("a > b: %b\n", c); 
+        
+        c = a < b;
+        System.out.printf("a < b: %b\n", c); 
+
+        c = a >= b;
+        System.out.printf("a >= b: %b\n", c);  
+
+        c = a <= b;
+        System.out.printf("a <= b: %b\n", c); 
+
+        c = a == b;
+        System.out.printf("a == b: %b\n", c);  
+
+        c = a != b;
+        System.out.printf("a != b: %b\n", c);  
+
+        // Đóng Scanner
+        scanner.close();
+	}
+
+}
